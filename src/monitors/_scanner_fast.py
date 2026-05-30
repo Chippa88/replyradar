@@ -154,7 +154,7 @@ def run_scan(config: Optional[dict] = None) -> list[dict]:
                 print(f"→ {matched} matches", flush=True)
 
             # Rate limit: Reddit allows ~60 req/min for JSON API
-            time.sleep(2.1)
+            time.sleep(0.5)
 
     return [asdict(r) for r in results]
 
